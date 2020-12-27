@@ -4,7 +4,7 @@ EELAYER 29 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 1
+Sheet 1 2
 Title ""
 Date ""
 Rev ""
@@ -14,17 +14,6 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-$Comp
-L Device:LED D1
-U 1 1 5FE6EEB9
-P 1550 1500
-F 0 "D1" H 1543 1716 50  0000 C CNN
-F 1 "LED" H 1543 1625 50  0000 C CNN
-F 2 "LED_SMD:LED_0603_1608Metric" H 1550 1500 50  0001 C CNN
-F 3 "~" H 1550 1500 50  0001 C CNN
-	1    1550 1500
-	1    0    0    -1  
-$EndComp
 $Comp
 L Device:LED D2
 U 1 1 5FE6F9B5
@@ -36,8 +25,6 @@ F 3 "~" H 2350 1500 50  0001 C CNN
 	1    2350 1500
 	1    0    0    -1  
 $EndComp
-Text Notes 1400 950  0    50   ~ 0
-0603
 Text Notes 2250 950  0    50   ~ 0
 0402
 $Comp
@@ -349,14 +336,20 @@ F 3 "" H 10600 950 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L LED:APA102 D30
-U 1 1 5FED33F0
-P 4850 1850
-F 0 "D30" H 4850 2331 50  0000 C CNN
-F 1 "APA102" H 4850 2240 50  0000 C CNN
-F 2 "LED_SMD:LED_RGB_PLCC-6" H 4900 1550 50  0001 L TNN
-F 3 "http://www.led-color.com/upload/201506/APA102%20LED.pdf" H 4950 1475 50  0001 L TNN
-	1    4850 1850
+L LED:APA102-2020 D1
+U 1 1 5FED5EF2
+P 1450 1450
+F 0 "D1" H 1450 1931 50  0000 C CNN
+F 1 "APA102-2020" H 1450 1840 50  0000 C CNN
+F 2 "LED_SMD:LED-APA102-2020" H 1500 1150 50  0001 L TNN
+F 3 "http://www.led-color.com/upload/201604/APA102-2020%20SMD%20LED.pdf" H 1550 1075 50  0001 L TNN
+	1    1450 1450
 	1    0    0    -1  
 $EndComp
+$Sheet
+S 8250 1700 950  700 
+U 5FEEB7E0
+F0 "Sheet5FEEB7DF" 50
+F1 "photodiode.sch" 50
+$EndSheet
 $EndSCHEMATC

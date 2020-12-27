@@ -4,7 +4,7 @@ EELAYER 29 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 1
+Sheet 1 2
 Title ""
 Date ""
 Rev ""
@@ -344,6 +344,23 @@ F 1 "APA102-2020" H 1450 1840 50  0000 C CNN
 F 2 "LED_SMD:LED-APA102-2020" H 1500 1150 50  0001 L TNN
 F 3 "http://www.led-color.com/upload/201604/APA102-2020%20SMD%20LED.pdf" H 1550 1075 50  0001 L TNN
 	1    1450 1450
+	1    0    0    -1  
+$EndComp
+$Sheet
+S 8250 1700 950  700 
+U 5FEEB7E0
+F0 "Sheet5FEEB7DF" 50
+F1 "photodiode.sch" 50
+$EndSheet
+$Comp
+L Device:LED D30
+U 1 1 5FEF7875
+P 3600 4700
+F 0 "D30" H 3593 4916 50  0000 C CNN
+F 1 "LED" H 3593 4825 50  0000 C CNN
+F 2 "LED_SMD:LED_0402_1005Metric" H 3600 4700 50  0001 C CNN
+F 3 "~" H 3600 4700 50  0001 C CNN
+	1    3600 4700
 	1    0    0    -1  
 $EndComp
 $EndSCHEMATC
