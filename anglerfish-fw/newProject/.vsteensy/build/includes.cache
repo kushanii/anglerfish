@@ -1,0 +1,12 @@
+[
+  {
+    "Sourcefile": null,
+    "Include": "",
+    "Includepath": "C:\\Program Files (x86)\\Arduino\\hardware\\teensy\\avr\\cores\\teensy3"
+  },
+  {
+    "Sourcefile": "C:\\Users\\iikus\\source\\newProject\\.vsteensy\\build\\sketch\\newProject.ino.cpp",
+    "Include": "",
+    "Includepath": null
+  }
+]

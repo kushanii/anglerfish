@@ -347,7 +347,7 @@ F 3 "http://www.led-color.com/upload/201604/APA102-2020%20SMD%20LED.pdf" H 1550 
 	1    0    0    -1  
 $EndComp
 $Sheet
-S 8250 1700 950  700 
+S 9900 1700 950  700 
 U 5FEEB7E0
 F0 "Sheet5FEEB7DF" 50
 F1 "photodiode.sch" 50

@@ -1,0 +1,7 @@
+device MK20DX256xxx7
+si 1
+speed 4000
+r
+loadfile .vsteensy/build/newProject.hex
+rnh
+exit

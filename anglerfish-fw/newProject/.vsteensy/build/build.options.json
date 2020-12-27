@@ -1,0 +1,11 @@
+{
+  "additionalFiles": "",
+  "builtInLibrariesFolders": "",
+  "builtInToolsFolders": "C:\\Program Files (x86)\\Arduino\\tools-builder",
+  "customBuildProperties": "",
+  "fqbn": "teensy:avr:teensy31:usb=serial,speed=96,opt=o2std,keys=en-us",
+  "hardwareFolders": "C:\\Program Files (x86)\\Arduino\\hardware",
+  "otherLibrariesFolders": "C:\\Users\\iikus\\Documents\\Arduino\\libraries",
+  "runtime.ide.version": "10600",
+  "sketchLocation": "C:\\Users\\iikus\\source\\newProject\\newProject.ino"
+}

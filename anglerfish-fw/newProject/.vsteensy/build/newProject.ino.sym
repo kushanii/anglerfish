@@ -1,0 +1,326 @@
+
+C:\Users\iikus\source\newProject\.vsteensy\build/newProject.ino.elf:     file format elf32-littlearm
+
+SYMBOL TABLE:
+00000000 l    d  .text	00000000 .text
+00001f74 l    d  .fini	00000000 .fini
+1fff8000 l    d  .usbdescriptortable	00000000 .usbdescriptortable
+1fff8200 l    d  .dmabuffers	00000000 .dmabuffers
+1fff83bc l    d  .usbbuffers	00000000 .usbbuffers
+1fff8720 l    d  .data	00000000 .data
+1fff8bf8 l    d  .bss	00000000 .bss
+00000000 l    d  .ARM.attributes	00000000 .ARM.attributes
+00000000 l    d  .comment	00000000 .comment
+00000000 l    d  .debug_info	00000000 .debug_info
+00000000 l    d  .debug_abbrev	00000000 .debug_abbrev
+00000000 l    d  .debug_loc	00000000 .debug_loc
+00000000 l    d  .debug_aranges	00000000 .debug_aranges
+00000000 l    d  .debug_ranges	00000000 .debug_ranges
+00000000 l    d  .debug_line	00000000 .debug_line
+00000000 l    d  .debug_str	00000000 .debug_str
+00000000 l    d  .debug_frame	00000000 .debug_frame
+00000000 l    df *ABS*	00000000 mk20dx128.c
+000004f4 l     F .text	0000000c startup_default_early_hook
+00000500 l     F .text	00000002 startup_default_late_hook
+00000000 l    df *ABS*	00000000 crtstuff.c
+00000410 l     F .text	00000000 __do_global_dtors_aux
+1fff8bf8 l       .bss	00000000 completed.8603
+00000434 l     F .text	00000000 frame_dummy
+1fff8bfc l       .bss	00000000 object.8608
+00001f70 l     O .text	00000000 __frame_dummy_init_array_entry
+00000000 l    df *ABS*	00000000 newProject.ino.cpp
+00000000 l    df *ABS*	00000000 pins_teensy.c
+00000504 l     F .text	00000078 pinMode.part.2
+00000000 l    df *ABS*	00000000 usb_dev.c
+1fff8c18 l     O .bss	00000004 ep0_tx_ptr
+1fff8c1c l     O .bss	00000010 rx_last
+1fff8c2c l     O .bss	00000002 ep0_tx_len
+1fff8c30 l     O .bss	00000040 ep0_rx0_buf
+1fff8c70 l     O .bss	00000010 rx_first
+1fff8c80 l     O .bss	00000001 ep0_tx_data_toggle
+1fff8c84 l     O .bss	00000040 ep0_rx1_buf
+1fff8cc4 l     O .bss	00000010 tx_first
+1fff8000 l     O .usbdescriptortable	000000a0 table
+1fff8cd4 l     O .bss	00000010 tx_last
+1fff8ce4 l     O .bss	00000008 setup
+1fff8cec l     O .bss	00000001 ep0_tx_bdt_bank
+1fff8cf0 l     O .bss	00000008 reply_buffer
+1fff8cfc l     O .bss	00000004 tx_state
+00000000 l    df *ABS*	00000000 usb_mem.c
+1fff8720 l     O .data	00000004 usb_buffer_available
+00000000 l    df *ABS*	00000000 usb_serial.c
+1fff8d01 l     O .bss	00000001 tx_noautoflush
+1fff8d04 l     O .bss	00000004 tx_packet
+1fff8d08 l     O .bss	00000004 rx_packet
+00000000 l    df *ABS*	00000000 EventResponder.cpp
+00000000 l    df *ABS*	00000000 main.cpp
+00000000 l    df *ABS*	00000000 yield.cpp
+1fff8d2c l     O .bss	00000001 yield::running
+00000000 l    df *ABS*	00000000 analog.c
+1fff8d2d l     O .bss	00000001 calibrating
+1fff8724 l     O .data	00000001 analog_config_bits
+1fff8d2e l     O .bss	00000001 analog_reference_internal
+1fff8725 l     O .data	00000001 analog_num_average
+00000000 l    df *ABS*	00000000 serial1.c
+1fff8d30 l     O .bss	00000004 rts_pin
+1fff8d34 l     O .bss	00000001 rx_buffer_head
+1fff8d35 l     O .bss	00000001 rx_buffer_tail
+1fff8d38 l     O .bss	00000040 tx_buffer
+1fff8d78 l     O .bss	00000040 rx_buffer
+1fff8db8 l     O .bss	00000001 transmitting
+1fff8db9 l     O .bss	00000001 tx_buffer_tail
+1fff8dbc l     O .bss	00000004 transmit_pin
+1fff8dc0 l     O .bss	00000001 tx_buffer_head
+00000000 l    df *ABS*	00000000 serial2.c
+1fff8dc4 l     O .bss	00000004 rts_pin
+1fff8dc8 l     O .bss	00000001 transmitting
+1fff8dc9 l     O .bss	00000001 rx_buffer_tail
+1fff8dcc l     O .bss	00000028 tx_buffer
+1fff8df4 l     O .bss	00000040 rx_buffer
+1fff8e34 l     O .bss	00000001 rx_buffer_head
+1fff8e35 l     O .bss	00000001 tx_buffer_tail
+1fff8e38 l     O .bss	00000004 transmit_pin
+1fff8e3c l     O .bss	00000001 tx_buffer_head
+00000000 l    df *ABS*	00000000 serial3.c
+1fff8e40 l     O .bss	00000004 rts_pin
+1fff8e44 l     O .bss	00000001 rx_buffer_head
+1fff8e45 l     O .bss	00000001 rx_buffer_tail
+1fff8e48 l     O .bss	00000028 tx_buffer
+1fff8e70 l     O .bss	00000040 rx_buffer
+1fff8eb0 l     O .bss	00000001 transmitting
+1fff8eb1 l     O .bss	00000001 tx_buffer_tail
+1fff8eb4 l     O .bss	00000004 transmit_pin
+1fff8eb8 l     O .bss	00000001 tx_buffer_head
+00000000 l    df *ABS*	00000000 usb_desc.c
+1fff8728 l     O .data	00000012 device_descriptor
+1fff8754 l     O .data	00000043 config_descriptor
+00000000 l    df *ABS*	00000000 HardwareSerial1.cpp
+00000000 l    df *ABS*	00000000 HardwareSerial2.cpp
+00000000 l    df *ABS*	00000000 HardwareSerial3.cpp
+00000000 l    df *ABS*	00000000 usb_inst.cpp
+00000000 l    df *ABS*	00000000 nonstd.c
+00000000 l    df *ABS*	00000000 init.c
+00000000 l    df *ABS*	00000000 __call_atexit.c
+00001d08 l     F .text	00000014 register_fini
+00000000 l    df *ABS*	00000000 atexit.c
+00000000 l    df *ABS*	00000000 fini.c
+00000000 l    df *ABS*	00000000 __atexit.c
+00000000 l    df *ABS*	00000000 impure.c
+1fff87d0 l     O .data	00000428 impure_data
+00000000 l    df *ABS*	00000000 c:/program files (x86)/arduino/hardware/tools/arm/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7e-m/crti.o
+00000000 l    df *ABS*	00000000 c:/program files (x86)/arduino/hardware/tools/arm/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7e-m/crtn.o
+00000000 l    df *ABS*	00000000 
+1fff8bf8 l       .bss	00000000 __bss_start__
+1fff8ed0 l       .bss	00000000 __bss_end__
+00000000 l       *UND*	00000000 software_init_hook
+00000000 l       *UND*	00000000 hardware_init_hook
+00000000 l       *UND*	00000000 __stack
+00000000 l       *UND*	00000000 free
+000004ec  w    F .text	00000006 adc0_isr
+000014a8 g     F .text	0000001c usb_serial_available
+0000170c  w    F .text	0000009c yield
+1fff873c g     O .data	00000018 usb_string_manufacturer_name_default
+00001888 g     F .text	00000020 serial_available
+000004a4  w    F .text	00000048 hard_fault_isr
+000004ec  w    F .text	00000006 dma_ch6_isr
+000019b4 g     F .text	00000020 serial2_available
+000004ec  w    F .text	00000006 uart0_lon_isr
+00000728 g     F .text	000000c8 usb_rx_memory
+000004ec  w    F .text	00000006 dma_ch8_isr
+000017a8 g     F .text	000000e0 analog_init
+000007f0 g     F .text	00000084 usb_tx
+000004ec  w    F .text	00000006 portcd_isr
+00001654 g     F .text	00000098 MillisTimer::runFromTimer()
+000004ec  w    F .text	00000006 can1_rx_warn_isr
+00001f78 g       .fini	00000000 __exidx_end
+000004ec  w    F .text	00000006 dma_error_isr
+1fff8d24 g     O .bss	00000001 EventResponder::runningFromYield
+000004ec  w    F .text	00000006 i2c0_isr
+000004ec  w    F .text	00000006 portd_isr
+000004ec  w    F .text	00000006 enet_error_isr
+1fff8d10 g     O .bss	00000004 EventResponder::firstInterrupt
+000004ec  w    F .text	00000006 tpm1_isr
+00001df4 g     O .text	00000110 digital_pin_to_info_PGM
+00001f78 g       .fini	00000000 _etext
+1fff8bf8 g       .bss	00000000 _sbss
+000004ec  w    F .text	00000006 porte_isr
+00000474 g     F .text	00000030 loop
+000004ec  w    F .text	00000006 portb_isr
+000004ec  w    F .text	00000006 spi1_isr
+000004ec  w    F .text	00000006 uart3_status_isr
+00001c5c  w    F .text	00000002 serialEvent1()
+000004ec  w    F .text	00000006 mcm_isr
+000015ec g     F .text	00000068 MillisTimer::addToActiveList()
+1fff8d14 g     O .bss	00000004 EventResponder::lastInterrupt
+000019d4 g     F .text	0000010c uart1_status_isr
+000004ec  w    F .text	00000006 randnum_isr
+1fff8c14 g     O .bss	00000004 systick_millis_count
+000004a4  w    F .text	00000048 bus_fault_isr
+000004ec  w    F .text	00000006 watchdog_isr
+000004ec  w    F .text	00000006 i2c1_isr
+1fff8cf8 g     O .bss	00000001 usb_configuration
+000004ec  w    F .text	00000006 dma_ch11_isr
+00000000  w      *UND*	00000000 __fini_array_end
+00001c60  w    F .text	00000002 serialEvent2()
+000004ec  w    F .text	00000006 i2c2_isr
+1fff873c  w    O .data	00000018 usb_string_manufacturer_name
+1fff8ebc g     O .bss	00000008 usb_rx_byte_count_data
+000004ec  w    F .text	00000006 pit1_isr
+00000000  w      *UND*	00000000 malloc
+000004ec  w    F .text	00000006 dma_ch4_isr
+000004ec  w    F .text	00000006 software_isr
+000004ec  w    F .text	00000006 dma_ch7_isr
+0000158c  w    F .text	00000018 EventResponder::triggerEvent(int, void*)
+00001344 g     F .text	000000d8 usb_init
+000004ec  w    F .text	00000006 lptmr_isr
+0000057c g     F .text	00000024 rtc_set
+1fff8720 g       .data	00000000 _sdata
+000001bc g     F .text	000001d8 ResetHandler
+000004ec  w    F .text	00000006 can1_bus_off_isr
+000004ec  w    F .text	00000006 ftm2_isr
+1fff8ec4 g     O .bss	00000008 usb_cdc_line_coding
+1fff8d1c g     O .bss	00000004 EventResponder::lastYield
+000004ec  w    F .text	00000006 uart5_status_isr
+000004ec  w    F .text	00000006 lpuart0_status_isr
+00001f04 g     O .text	00000004 usb_endpoint_config_table
+000004ec  w    F .text	00000006 dma_ch9_isr
+000004ec  w    F .text	00000006 pit2_isr
+00001ae0 g     F .text	00000020 serial3_available
+000005a0 g     F .text	0000000a pinMode
+0000145c g     F .text	0000004c usb_free
+000004ec  w    F .text	00000006 i2c3_isr
+00001f78 g       .fini	00000000 __exidx_start
+000004ec  w    F .text	00000006 pit0_isr
+1fff8d20 g     O .bss	00000004 EventResponder::firstYield
+00001f5c g     O .text	00000004 _global_impure_ptr
+000004ec  w    F .text	00000006 can1_error_isr
+00001cb8 g     F .text	00000050 __libc_init_array
+1fff8ed0 g       .bss	00000000 __bss_end
+000004ec  w    F .text	00000006 can0_wakeup_isr
+000004ec  w    F .text	00000006 flash_cmd_isr
+00001b00 g     F .text	000000d8 uart2_status_isr
+1fff8d28 g     O .bss	00000004 MillisTimer::listWaiting
+1fff8d0c g     O .bss	00000001 usb_cdc_line_rtsdtr
+000014c4 g     F .text	00000048 usb_serial_flush_callback
+00001f60 g     F .text	00000000 _init
+000004ec  w    F .text	00000006 svcall_isr
+000004ec  w    F .text	00000006 dma_ch15_isr
+000004ec  w    F .text	00000006 uart1_error_isr
+00001d28 g     F .text	00000028 __libc_fini_array
+000004ec  w    F .text	00000006 usbhs_phy_isr
+1fff8ed0 g       .bss	00000000 _ebss
+000004ec g     F .text	00000006 unused_isr
+000004ec  w    F .text	00000006 spi0_isr
+000004ec  w    F .text	00000006 dma_ch3_isr
+000004ec  w    F .text	00000006 flash_error_isr
+000004ec  w    F .text	00000006 uart5_error_isr
+000004ec  w    F .text	00000006 rtc_seconds_isr
+000004ec  w    F .text	00000006 pdb_isr
+000004a4  w    F .text	00000048 usage_fault_isr
+000004ec  w    F .text	00000006 dac1_isr
+00000000 g     O .text	000001bc _VectorsFlash
+000004ec  w    F .text	00000006 dma_ch14_isr
+00000000  w      *UND*	00000000 __deregister_frame_info
+1fff8ecc g     O .bss	00000004 usb_cdc_line_rtsdtr_millis
+000016ec g     F .text	00000010 systick_isr
+000004ec  w    F .text	00000006 rtc_alarm_isr
+000004ec  w    F .text	00000006 dma_ch2_isr
+000004ec  w    F .text	00000006 ftm1_isr
+000004f4  w    F .text	0000000c startup_early_hook
+000004ec  w    F .text	00000006 dma_ch13_isr
+000004ec  w    F .text	00000006 uart2_error_isr
+1fff87b4 g     O .data	00000016 usb_string_serial_number_default
+000004a4 g     F .text	00000048 fault_isr
+000004ec  w    F .text	00000006 usb_charge_isr
+000004ec  w    F .text	00000006 cmt_isr
+000004ec  w    F .text	00000006 usbhs_isr
+000004ec  w    F .text	00000006 ftm3_isr
+000004ec  w    F .text	00000006 tsi0_isr
+000004ec  w    F .text	00000006 spi2_isr
+00001c68  w    F .text	00000002 serialEvent()
+1fff8c81 g     O .bss	00000001 usb_reboot_timer
+00001d50 g     F .text	000000a4 __register_exitproc
+00000021 g       *ABS*	00000000 _teensy_model_identifier
+000004ec  w    F .text	00000006 can0_bus_off_isr
+1fff8ced g     O .bss	00000001 usb_rx_memory_needed
+00000874 g     F .text	00000ace usb_isr
+000004ec  w    F .text	00000006 uart3_error_isr
+1fff8d18 g     O .bss	00000004 MillisTimer::listActive
+000004ec  w    F .text	00000006 porta_isr
+1fff83bc g     O .usbbuffers	00000360 usb_buffer_memory
+000004ec  w    F .text	00000006 low_voltage_isr
+000004ec  w    F .text	00000006 can0_error_isr
+00000648 g     F .text	000000e0 _init_Teensyduino_internal_
+000004ec  w    F .text	00000006 dma_ch12_isr
+00000000  w      *UND*	00000000 __fini_array_start
+000004ec  w    F .text	00000006 can1_wakeup_isr
+1fff8200 g     O .dmabuffers	000001bc _VectorsRam
+000004ec  w    F .text	00000006 pit3_isr
+000004ec  w    F .text	00000006 enet_rx_isr
+000004ec  w    F .text	00000006 portc_isr
+000016fc g     F .text	00000010 main
+000004a4  w    F .text	00000048 memmanage_fault_isr
+00001bd8 g     F .text	00000084 usb_init_serialnumber
+00001f74 g       .text	00000000 __init_array_end
+000004ec  w    F .text	00000006 debugmonitor_isr
+0000150c g     F .text	00000080 EventResponder::triggerEventNotImmediate()
+5fe86296 g       *ABS*	00000000 __rtc_localtime
+00000000  w      *UND*	00000000 __libc_fini
+000004ec  w    F .text	00000006 cmp1_isr
+000004ec  w    F .text	00000006 ftm0_isr
+1fff87b0 g     O .data	00000004 string0
+00000500  w    F .text	00000002 startup_late_hook
+1fff8798  w    O .data	00000016 usb_string_product_name
+000005ac g     F .text	0000009c delay
+000004ec  w    F .text	00000006 tpm0_isr
+00001f74 g     F .fini	00000000 _fini
+000004ec  w    F .text	00000006 i2s0_rx_isr
+000004ec  w    F .text	00000006 uart4_error_isr
+00001d1c g     F .text	0000000c atexit
+000004ec  w    F .text	00000006 can0_message_isr
+000004ec  w    F .text	00000006 can1_message_isr
+000004ec  w    F .text	00000006 nmi_isr
+00001f6c g       .text	00000000 __preinit_array_end
+000004ec  w    F .text	00000006 sdhc_isr
+0000046c g     F .text	00000008 setup
+00001f08 g     O .text	00000054 usb_descriptor_list
+000004ec  w    F .text	00000006 dma_ch10_isr
+000004ec  w    F .text	00000006 uart0_error_isr
+0000141c g     F .text	00000040 usb_malloc
+000004ec  w    F .text	00000006 i2s0_isr
+20008000 g       .bss	00000000 _estack
+000004ec  w    F .text	00000006 enet_timer_isr
+1fff8bf8 g       .data	00000000 _edata
+000004ec  w    F .text	00000006 i2s0_tx_isr
+000004ec  w    F .text	00000006 adc1_isr
+000004ec  w    F .text	00000006 cmp0_isr
+00001c6c g     F .text	0000004c ultoa
+000015a4 g     F .text	00000044 EventResponder::runFromInterrupt()
+1fff8d00 g     O .bss	00000001 usb_cdc_transmit_flush_timer
+000004ec  w    F .text	00000006 pit_isr
+000004ec  w    F .text	00000006 dac0_isr
+00001f6c g       .text	00000000 __init_array_start
+000004ec  w    F .text	00000006 can1_tx_warn_isr
+000018a8 g     F .text	0000010c uart0_status_isr
+000004ec  w    F .text	00000006 mcg_isr
+00000400 g     O .text	00000010 flashconfigbytes
+1fff8798 g     O .data	00000016 usb_string_product_name_default
+000004ec  w    F .text	00000006 dma_ch1_isr
+000004ec  w    F .text	00000006 dma_ch5_isr
+000004ec  w    F .text	00000006 can0_rx_warn_isr
+000004ec  w    F .text	00000006 can0_tx_warn_isr
+000004ec  w    F .text	00000006 uart4_status_isr
+00000000  w      *UND*	00000000 _Jv_RegisterClasses
+00001f6c g       .text	00000000 __preinit_array_start
+00001c64  w    F .text	00000002 serialEvent3()
+00000000  w      *UND*	00000000 __register_frame_info
+000004ec  w    F .text	00000006 cmp2_isr
+000015e8 g     F .text	00000004 pendablesrvreq_isr
+000004ec  w    F .text	00000006 wakeup_isr
+000004ec  w    F .text	00000006 cmp3_isr
+000004ec  w    F .text	00000006 tpm2_isr
+000004ec  w    F .text	00000006 dma_ch0_isr
+1fff87b4  w    O .data	00000016 usb_string_serial_number
+000004ec  w    F .text	00000006 enet_tx_isr
+
+
