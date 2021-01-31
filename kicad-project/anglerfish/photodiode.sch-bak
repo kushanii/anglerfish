@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 2 2
+Sheet 2 3
 Title "Anglerfish"
 Date "2020-05-10"
 Rev "A"
@@ -29,7 +29,7 @@ $EndComp
 $Comp
 L Connector:TestPoint TP?
 U 1 1 5DD2446E
-P 6600 3300
+P 6850 3050
 AR Path="/5DD2446E" Ref="TP?"  Part="1" 
 AR Path="/5D7D4F90/5DD2446E" Ref="TP?"  Part="1" 
 AR Path="/5D841DAD/5DD2446E" Ref="TP?"  Part="1" 
@@ -38,19 +38,17 @@ AR Path="/5D9AC14C/5DD2446E" Ref="TP?"  Part="1"
 AR Path="/5D9CE382/5DD2446E" Ref="TP?"  Part="1" 
 AR Path="/5DD1C388/5DD2446E" Ref="TP?"  Part="1" 
 AR Path="/5FEEB7E0/5DD2446E" Ref="TP1"  Part="1" 
-F 0 "TP1" H 6658 3418 50  0000 L CNN
-F 1 "TestPoint" H 6658 3327 50  0000 L CNN
-F 2 "TestPoint:TestPoint_Pad_D1.5mm" H 6800 3300 50  0001 C CNN
-F 3 "~" H 6800 3300 50  0001 C CNN
-	1    6600 3300
+F 0 "TP1" H 6908 3168 50  0000 L CNN
+F 1 "TestPoint" H 6908 3077 50  0001 L CNN
+F 2 "TestPoint:TestPoint_Pad_D1.5mm" H 7050 3050 50  0001 C CNN
+F 3 "~" H 7050 3050 50  0001 C CNN
+	1    6850 3050
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	6600 3400 6600 3300
 $Comp
 L Connector:TestPoint TP?
 U 1 1 5DD2470C
-P 7100 3400
+P 7200 3050
 AR Path="/5DD2470C" Ref="TP?"  Part="1" 
 AR Path="/5D7D4F90/5DD2470C" Ref="TP?"  Part="1" 
 AR Path="/5D841DAD/5DD2470C" Ref="TP?"  Part="1" 
@@ -59,36 +57,13 @@ AR Path="/5D9AC14C/5DD2470C" Ref="TP?"  Part="1"
 AR Path="/5D9CE382/5DD2470C" Ref="TP?"  Part="1" 
 AR Path="/5DD1C388/5DD2470C" Ref="TP?"  Part="1" 
 AR Path="/5FEEB7E0/5DD2470C" Ref="TP2"  Part="1" 
-F 0 "TP2" H 7158 3518 50  0000 L CNN
-F 1 "TestPoint" H 7158 3427 50  0000 L CNN
-F 2 "TestPoint:TestPoint_Pad_D1.5mm" H 7300 3400 50  0001 C CNN
-F 3 "~" H 7300 3400 50  0001 C CNN
-	1    7100 3400
+F 0 "TP2" H 7258 3168 50  0000 L CNN
+F 1 "TestPoint" H 7258 3077 50  0001 L CNN
+F 2 "TestPoint:TestPoint_Pad_D1.5mm" H 7400 3050 50  0001 C CNN
+F 3 "~" H 7400 3050 50  0001 C CNN
+	1    7200 3050
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	7100 3500 7100 3400
-$Comp
-L Connector:TestPoint TP?
-U 1 1 5DD24ABF
-P 7600 3500
-AR Path="/5DD24ABF" Ref="TP?"  Part="1" 
-AR Path="/5D7D4F90/5DD24ABF" Ref="TP?"  Part="1" 
-AR Path="/5D841DAD/5DD24ABF" Ref="TP?"  Part="1" 
-AR Path="/5D930A7F/5DD24ABF" Ref="TP?"  Part="1" 
-AR Path="/5D9AC14C/5DD24ABF" Ref="TP?"  Part="1" 
-AR Path="/5D9CE382/5DD24ABF" Ref="TP?"  Part="1" 
-AR Path="/5DD1C388/5DD24ABF" Ref="TP?"  Part="1" 
-AR Path="/5FEEB7E0/5DD24ABF" Ref="TP3"  Part="1" 
-F 0 "TP3" H 7658 3618 50  0000 L CNN
-F 1 "TestPoint" H 7658 3527 50  0000 L CNN
-F 2 "TestPoint:TestPoint_Pad_D1.5mm" H 7800 3500 50  0001 C CNN
-F 3 "~" H 7800 3500 50  0001 C CNN
-	1    7600 3500
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	7600 3600 7600 3500
 $Comp
 L Device:C C1
 U 1 1 5DD250FF
@@ -111,18 +86,12 @@ Wire Wire Line
 	4050 3150 5300 3150
 Wire Wire Line
 	4050 3150 4050 3400
-Wire Wire Line
-	5900 3400 6600 3400
-Wire Wire Line
-	5900 3500 7100 3500
-Wire Wire Line
-	5900 3600 7600 3600
 Text Label 6100 3400 0    50   ~ 0
-light-sda
+photodiode-sda
 Text Label 6100 3500 0    50   ~ 0
-light-scl
+photodiode-scl
 Text Label 6100 3600 0    50   ~ 0
-light-int
+photodiode-int
 $Comp
 L power:GND #PWR02
 U 1 1 5DD2D93E
@@ -152,4 +121,50 @@ Wire Wire Line
 	5300 3150 5600 3150
 Wire Wire Line
 	5600 3900 5600 4250
+$Comp
+L Connector:TestPoint TP?
+U 1 1 5DD24ABF
+P 7500 3050
+AR Path="/5DD24ABF" Ref="TP?"  Part="1" 
+AR Path="/5D7D4F90/5DD24ABF" Ref="TP?"  Part="1" 
+AR Path="/5D841DAD/5DD24ABF" Ref="TP?"  Part="1" 
+AR Path="/5D930A7F/5DD24ABF" Ref="TP?"  Part="1" 
+AR Path="/5D9AC14C/5DD24ABF" Ref="TP?"  Part="1" 
+AR Path="/5D9CE382/5DD24ABF" Ref="TP?"  Part="1" 
+AR Path="/5DD1C388/5DD24ABF" Ref="TP?"  Part="1" 
+AR Path="/5FEEB7E0/5DD24ABF" Ref="TP3"  Part="1" 
+F 0 "TP3" H 7558 3168 50  0000 L CNN
+F 1 "TestPoint" H 7558 3077 50  0001 L CNN
+F 2 "TestPoint:TestPoint_Pad_D1.5mm" H 7700 3050 50  0001 C CNN
+F 3 "~" H 7700 3050 50  0001 C CNN
+	1    7500 3050
+	1    0    0    -1  
+$EndComp
+Text HLabel 7800 3400 2    50   BiDi ~ 0
+photodiode-sda
+Text HLabel 7800 3500 2    50   Input ~ 0
+photodiode-scl
+Text HLabel 7800 3600 2    50   Output ~ 0
+photodiode-int
+Wire Wire Line
+	5900 3600 7500 3600
+Wire Wire Line
+	5900 3500 7200 3500
+Wire Wire Line
+	5900 3400 6850 3400
+Wire Wire Line
+	6850 3050 6850 3400
+Connection ~ 6850 3400
+Wire Wire Line
+	6850 3400 7800 3400
+Wire Wire Line
+	7200 3050 7200 3500
+Connection ~ 7200 3500
+Wire Wire Line
+	7200 3500 7800 3500
+Wire Wire Line
+	7500 3050 7500 3600
+Connection ~ 7500 3600
+Wire Wire Line
+	7500 3600 7800 3600
 $EndSCHEMATC
