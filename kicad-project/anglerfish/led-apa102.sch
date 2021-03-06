@@ -47,7 +47,7 @@ AR Path="/5FEEB7E0/603768A5" Ref="C?"  Part="1"
 AR Path="/60363A5D/603768A5" Ref="C2"  Part="1" 
 F 0 "C2" H 3615 3596 50  0000 L CNN
 F 1 "100n" H 3615 3505 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0402_1005Metric" H 3538 3400 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 2800 3400 50  0000 C CNN
 F 3 "~" H 3500 3550 50  0001 C CNN
 	1    3500 3550
 	1    0    0    -1  
@@ -99,4 +99,20 @@ Text Label 5750 2750 0    50   ~ 0
 apa102-cki
 Text Label 5750 2850 0    50   ~ 0
 apa102-sdi
+$Comp
+L power:+5V #PWR?
+U 1 1 604FC943
+P 3500 2900
+AR Path="/604FC943" Ref="#PWR?"  Part="1" 
+AR Path="/60363A5D/604FC943" Ref="#PWR016"  Part="1" 
+F 0 "#PWR016" H 3500 2750 50  0001 C CNN
+F 1 "+5V" H 3515 3073 50  0000 C CNN
+F 2 "" H 3500 2900 50  0001 C CNN
+F 3 "" H 3500 2900 50  0001 C CNN
+	1    3500 2900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3500 2900 3500 3150
+Connection ~ 3500 3150
 $EndSCHEMATC

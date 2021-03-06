@@ -4,10 +4,10 @@ EELAYER END
 $Descr A3 16535 11693
 encoding utf-8
 Sheet 1 3
-Title ""
-Date ""
-Rev ""
-Comp ""
+Title "Anglerfish, Art Board"
+Date "2021-03-05"
+Rev "A"
+Comp "Iskender & Carina"
 Comment1 ""
 Comment2 ""
 Comment3 ""
@@ -25,8 +25,8 @@ F 4 "C130725" H 2450 3550 50  0001 C CNN "LCSC Part"
 	1    2450 3550
 	1    0    0    -1  
 $EndComp
-Text Notes 2400 3000 0    50   ~ 0
-0402
+Text Notes 1550 3050 0    50   ~ 0
+All LED and Resistors are 0402.\nAll testpoints are TestPoint:TestPoint_Pad_D1.5mm.\nResistor values are TBD.
 $Comp
 L Device:LED D3
 U 1 1 5FE81384
@@ -51,12 +51,13 @@ F 3 "" H 14500 2200 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Sheet
-S 12450 4750 950  400 
+S 12450 4750 950  450 
 U 5FEEB7E0
 F0 "photodiode-1" 50
 F1 "photodiode.sch" 50
 F2 "photodiode-sda" B R 13400 5000 50 
 F3 "photodiode-scl" I R 13400 4900 50 
+F4 "photodiode-int" O R 13400 5100 50 
 $EndSheet
 $Comp
 L power:GND #PWR010
@@ -893,31 +894,21 @@ F 3 "~" H 9550 6600 50  0001 C CNN
 	1    9350 6600
 	1    0    0    -1  
 $EndComp
-$Sheet
-S 12450 5550 950  750 
-U 60363A5D
-F0 "led-apa102-1" 50
-F1 "led-apa102.sch" 50
-F2 "apa102-cko" O R 13400 6000 50 
-F3 "apa102-sdo" O R 13400 6100 50 
-F4 "apa102-cki" O R 13400 5650 50 
-F5 "apa102-sdi" O R 13400 5750 50 
-$EndSheet
 $Comp
 L power:+3.3V #PWR?
 U 1 1 6037FD72
-P 14800 4200
+P 14800 3850
 AR Path="/5FEEB7E0/6037FD72" Ref="#PWR?"  Part="1" 
-AR Path="/6037FD72" Ref="#PWR?"  Part="1" 
-F 0 "#PWR?" H 14800 4050 50  0001 C CNN
-F 1 "+3.3V" H 14815 4373 50  0000 C CNN
-F 2 "" H 14800 4200 50  0001 C CNN
-F 3 "" H 14800 4200 50  0001 C CNN
-	1    14800 4200
+AR Path="/6037FD72" Ref="#PWR014"  Part="1" 
+F 0 "#PWR014" H 14800 3700 50  0001 C CNN
+F 1 "+3.3V" H 14815 4023 50  0000 C CNN
+F 2 "" H 14800 3850 50  0001 C CNN
+F 3 "" H 14800 3850 50  0001 C CNN
+	1    14800 3850
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	14800 4200 14800 4300
+	14800 3850 14800 3950
 Wire Wire Line
 	14800 4300 15000 4300
 Wire Wire Line
@@ -926,14 +917,14 @@ Wire Wire Line
 	14800 4400 14800 4300
 Connection ~ 14800 4300
 $Comp
-L power:+5V #PWR?
+L power:+5V #PWR013
 U 1 1 603963D5
-P 14550 4200
-F 0 "#PWR?" H 14550 4050 50  0001 C CNN
-F 1 "+5V" H 14565 4373 50  0000 C CNN
-F 2 "" H 14550 4200 50  0001 C CNN
-F 3 "" H 14550 4200 50  0001 C CNN
-	1    14550 4200
+P 14550 4300
+F 0 "#PWR013" H 14550 4150 50  0001 C CNN
+F 1 "+5V" H 14565 4473 50  0000 C CNN
+F 2 "" H 14550 4300 50  0001 C CNN
+F 3 "" H 14550 4300 50  0001 C CNN
+	1    14550 4300
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
@@ -943,15 +934,13 @@ Wire Wire Line
 Wire Wire Line
 	14800 4500 15000 4500
 Wire Wire Line
-	14800 4500 14550 4500
-Wire Wire Line
-	14550 4500 14550 4200
+	14550 4500 14550 4300
 Connection ~ 14800 4500
 $Comp
-L power:GND #PWR?
+L power:GND #PWR017
 U 1 1 603AE2C0
 P 14850 5600
-F 0 "#PWR?" H 14850 5350 50  0001 C CNN
+F 0 "#PWR017" H 14850 5350 50  0001 C CNN
 F 1 "GND" V 14855 5472 50  0000 R CNN
 F 2 "" H 14850 5600 50  0001 C CNN
 F 3 "" H 14850 5600 50  0001 C CNN
@@ -962,19 +951,6 @@ Wire Wire Line
 	14950 4700 15000 4700
 Wire Wire Line
 	14950 4800 15000 4800
-$Comp
-L power:GND #PWR?
-U 1 1 603BF1B7
-P 14850 5100
-F 0 "#PWR?" H 14850 4850 50  0001 C CNN
-F 1 "GND" V 14855 4972 50  0000 R CNN
-F 2 "" H 14850 5100 50  0001 C CNN
-F 3 "" H 14850 5100 50  0001 C CNN
-	1    14850 5100
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	15000 5100 14850 5100
 Text Label 13600 4900 0    50   ~ 0
 photodiode-scl
 Text Label 13600 5000 0    50   ~ 0
@@ -985,11 +961,7 @@ Wire Wire Line
 	13400 5000 15000 5000
 NoConn ~ 15000 5200
 Wire Wire Line
-	13600 5300 13600 5650
-Wire Wire Line
 	13600 5300 15000 5300
-Wire Wire Line
-	13700 5750 13700 5400
 Wire Wire Line
 	13700 5400 15000 5400
 $Comp
@@ -1009,10 +981,10 @@ Wire Wire Line
 Wire Wire Line
 	14850 5600 15000 5600
 $Comp
-L power:GND #PWR?
+L power:GND #PWR015
 U 1 1 604DB0A8
 P 14850 4750
-F 0 "#PWR?" H 14850 4500 50  0001 C CNN
+F 0 "#PWR015" H 14850 4500 50  0001 C CNN
 F 1 "GND" V 14855 4622 50  0000 R CNN
 F 2 "" H 14850 4750 50  0001 C CNN
 F 3 "" H 14850 4750 50  0001 C CNN
@@ -1062,8 +1034,8 @@ NoConn ~ 15000 7300
 NoConn ~ 15000 7400
 NoConn ~ 15000 7500
 NoConn ~ 15000 7600
-NoConn ~ 13400 6000
-NoConn ~ 13400 6100
+NoConn ~ 12850 6550
+NoConn ~ 12850 6650
 $Comp
 L Connector:TestPoint TP5
 U 1 1 60326C6F
@@ -1151,10 +1123,6 @@ Wire Wire Line
 Connection ~ 9050 6850
 Wire Wire Line
 	9050 6850 9050 7000
-Wire Wire Line
-	13400 5750 13700 5750
-Wire Wire Line
-	13600 5650 13400 5650
 $Comp
 L Device:LED D4
 U 1 1 60342FF6
@@ -1481,4 +1449,190 @@ F 4 "C130725" H 8650 5300 50  0001 C CNN "LCSC Part"
 	1    8650 5300
 	1    0    0    -1  
 $EndComp
+$Comp
+L Connector:TestPoint TP10
+U 1 1 604498D7
+P 13900 4200
+AR Path="/604498D7" Ref="TP10"  Part="1" 
+AR Path="/5D7D4F90/604498D7" Ref="TP?"  Part="1" 
+AR Path="/5D841DAD/604498D7" Ref="TP?"  Part="1" 
+AR Path="/5D930A7F/604498D7" Ref="TP?"  Part="1" 
+AR Path="/5D9AC14C/604498D7" Ref="TP?"  Part="1" 
+AR Path="/5D9CE382/604498D7" Ref="TP?"  Part="1" 
+AR Path="/5DD1C388/604498D7" Ref="TP?"  Part="1" 
+AR Path="/5FEEB7E0/604498D7" Ref="TP?"  Part="1" 
+F 0 "TP10" H 13958 4318 50  0000 L CNN
+F 1 "TestPoint" H 13958 4227 50  0001 L CNN
+F 2 "TestPoint:TestPoint_Pad_D1.5mm" H 14100 4200 50  0001 C CNN
+F 3 "~" H 14100 4200 50  0001 C CNN
+	1    13900 4200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	13900 4200 13900 4500
+$Comp
+L Connector:TestPoint TP12
+U 1 1 60453AC5
+P 14200 3850
+AR Path="/60453AC5" Ref="TP12"  Part="1" 
+AR Path="/5D7D4F90/60453AC5" Ref="TP?"  Part="1" 
+AR Path="/5D841DAD/60453AC5" Ref="TP?"  Part="1" 
+AR Path="/5D930A7F/60453AC5" Ref="TP?"  Part="1" 
+AR Path="/5D9AC14C/60453AC5" Ref="TP?"  Part="1" 
+AR Path="/5D9CE382/60453AC5" Ref="TP?"  Part="1" 
+AR Path="/5DD1C388/60453AC5" Ref="TP?"  Part="1" 
+AR Path="/5FEEB7E0/60453AC5" Ref="TP?"  Part="1" 
+F 0 "TP12" H 14258 3968 50  0000 L CNN
+F 1 "TestPoint" H 14258 3877 50  0001 L CNN
+F 2 "TestPoint:TestPoint_Pad_D1.5mm" H 14400 3850 50  0001 C CNN
+F 3 "~" H 14400 3850 50  0001 C CNN
+	1    14200 3850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	13900 4500 14550 4500
+Connection ~ 14550 4500
+Wire Wire Line
+	14550 4500 14800 4500
+Wire Wire Line
+	14200 3850 14200 3950
+Wire Wire Line
+	14200 3950 14800 3950
+Connection ~ 14800 3950
+Wire Wire Line
+	14800 3950 14800 4300
+$Comp
+L Connector:TestPoint TP11
+U 1 1 6049EF67
+P 13950 7000
+AR Path="/6049EF67" Ref="TP11"  Part="1" 
+AR Path="/5D7D4F90/6049EF67" Ref="TP?"  Part="1" 
+AR Path="/5D841DAD/6049EF67" Ref="TP?"  Part="1" 
+AR Path="/5D930A7F/6049EF67" Ref="TP?"  Part="1" 
+AR Path="/5D9AC14C/6049EF67" Ref="TP?"  Part="1" 
+AR Path="/5D9CE382/6049EF67" Ref="TP?"  Part="1" 
+AR Path="/5DD1C388/6049EF67" Ref="TP?"  Part="1" 
+AR Path="/5FEEB7E0/6049EF67" Ref="TP?"  Part="1" 
+F 0 "TP11" H 14008 7118 50  0000 L CNN
+F 1 "TestPoint" H 14008 7027 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Pad_D1.5mm" H 14150 7000 50  0001 C CNN
+F 3 "~" H 14150 7000 50  0001 C CNN
+	1    13950 7000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:TestPoint TP13
+U 1 1 604A9A63
+P 14300 7200
+AR Path="/604A9A63" Ref="TP13"  Part="1" 
+AR Path="/5D7D4F90/604A9A63" Ref="TP?"  Part="1" 
+AR Path="/5D841DAD/604A9A63" Ref="TP?"  Part="1" 
+AR Path="/5D930A7F/604A9A63" Ref="TP?"  Part="1" 
+AR Path="/5D9AC14C/604A9A63" Ref="TP?"  Part="1" 
+AR Path="/5D9CE382/604A9A63" Ref="TP?"  Part="1" 
+AR Path="/5DD1C388/604A9A63" Ref="TP?"  Part="1" 
+AR Path="/5FEEB7E0/604A9A63" Ref="TP?"  Part="1" 
+F 0 "TP13" H 14358 7318 50  0000 L CNN
+F 1 "TestPoint" H 14358 7227 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Pad_D1.5mm" H 14500 7200 50  0001 C CNN
+F 3 "~" H 14500 7200 50  0001 C CNN
+	1    14300 7200
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR012
+U 1 1 604BEF61
+P 14300 7300
+F 0 "#PWR012" H 14300 7050 50  0001 C CNN
+F 1 "GND" V 14305 7172 50  0000 R CNN
+F 2 "" H 14300 7300 50  0001 C CNN
+F 3 "" H 14300 7300 50  0001 C CNN
+	1    14300 7300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	14300 7300 14300 7200
+$Comp
+L power:GND #PWR011
+U 1 1 604C982A
+P 13950 7100
+F 0 "#PWR011" H 13950 6850 50  0001 C CNN
+F 1 "GND" V 13955 6972 50  0000 R CNN
+F 2 "" H 13950 7100 50  0001 C CNN
+F 3 "" H 13950 7100 50  0001 C CNN
+	1    13950 7100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	13950 7100 13950 7000
+$Comp
+L Connector:TestPoint TP14
+U 1 1 60517826
+P 13000 5850
+AR Path="/60517826" Ref="TP14"  Part="1" 
+AR Path="/5D7D4F90/60517826" Ref="TP?"  Part="1" 
+AR Path="/5D841DAD/60517826" Ref="TP?"  Part="1" 
+AR Path="/5D930A7F/60517826" Ref="TP?"  Part="1" 
+AR Path="/5D9AC14C/60517826" Ref="TP?"  Part="1" 
+AR Path="/5D9CE382/60517826" Ref="TP?"  Part="1" 
+AR Path="/5DD1C388/60517826" Ref="TP?"  Part="1" 
+AR Path="/5FEEB7E0/60517826" Ref="TP?"  Part="1" 
+F 0 "TP14" H 13058 5968 50  0000 L CNN
+F 1 "TestPoint" H 13058 5877 50  0001 L CNN
+F 2 "TestPoint:TestPoint_Pad_D1.5mm" H 13200 5850 50  0001 C CNN
+F 3 "~" H 13200 5850 50  0001 C CNN
+	1    13000 5850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:TestPoint TP15
+U 1 1 6052330D
+P 13250 6000
+AR Path="/6052330D" Ref="TP15"  Part="1" 
+AR Path="/5D7D4F90/6052330D" Ref="TP?"  Part="1" 
+AR Path="/5D841DAD/6052330D" Ref="TP?"  Part="1" 
+AR Path="/5D930A7F/6052330D" Ref="TP?"  Part="1" 
+AR Path="/5D9AC14C/6052330D" Ref="TP?"  Part="1" 
+AR Path="/5D9CE382/6052330D" Ref="TP?"  Part="1" 
+AR Path="/5DD1C388/6052330D" Ref="TP?"  Part="1" 
+AR Path="/5FEEB7E0/6052330D" Ref="TP?"  Part="1" 
+F 0 "TP15" H 13308 6118 50  0000 L CNN
+F 1 "TestPoint" H 13308 6027 50  0001 L CNN
+F 2 "TestPoint:TestPoint_Pad_D1.5mm" H 13450 6000 50  0001 C CNN
+F 3 "~" H 13450 6000 50  0001 C CNN
+	1    13250 6000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	13250 6000 13250 6300
+Wire Wire Line
+	13000 5850 13000 6200
+Connection ~ 13000 6200
+Wire Wire Line
+	13000 6200 12850 6200
+Wire Wire Line
+	13600 5300 13600 6200
+Wire Wire Line
+	13000 6200 13600 6200
+Wire Wire Line
+	12850 6300 13250 6300
+Wire Wire Line
+	13250 6300 13700 6300
+Wire Wire Line
+	13700 5400 13700 6300
+Connection ~ 13250 6300
+Wire Wire Line
+	13400 5100 15000 5100
+Text Label 13600 5100 0    50   ~ 0
+photodiode-int
+$Sheet
+S 11900 6100 950  750 
+U 60363A5D
+F0 "led-apa102-1" 50
+F1 "led-apa102.sch" 50
+F2 "apa102-cko" O R 12850 6550 50 
+F3 "apa102-sdo" O R 12850 6650 50 
+F4 "apa102-cki" O R 12850 6200 50 
+F5 "apa102-sdi" O R 12850 6300 50 
+$EndSheet
 $EndSCHEMATC

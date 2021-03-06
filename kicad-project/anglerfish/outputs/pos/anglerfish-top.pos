@@ -1,4 +1,4 @@
-### Module positions - created on 02/21/21 22:54:34 ###
+### Module positions - created on 03/05/21 20:34:11 ###
 ### Printed by Pcbnew version kicad (5.1.8)-1
 ## Unit = mm, Angle = deg.
 ## Side : top
@@ -33,6 +33,5 @@ D27       LED            LED_0402_1005Metric            143.9000  -125.8000    0
 D28       LED            LED_0402_1005Metric            143.0000  -131.9000    0.0000  top
 D29       LED            LED_0402_1005Metric            140.3000  -138.6000    0.0000  top
 D30       LED            LED_0402_1005Metric            114.9000  -100.0000   70.0000  top
-G1        LOGO           anglerfish                     148.5000  -104.0000    0.0000  top
 U1        APDS-9306-065  Broadcom_DFN-6_2x2mm_P0.65mm   110.8000   -87.6000    0.0000  top
 ## End
